@@ -1,0 +1,33 @@
+{
+  "_source": {
+    "enabled": true
+  },
+  "properties": {
+    "type": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text",
+      "fields":{
+        "keyword":{
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      },
+      "analyzer": "ik_smart"
+    },
+    "url": {
+      "type": "text"
+    },
+    "infotype": {
+      "type": "text"
+    },
+    "infomessage": {
+      "type": "text"
+    },
+    "id":{
+      "type":
+      "keyword"
+    }
+  }
+}

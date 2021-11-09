@@ -1,0 +1,52 @@
+{
+  "_source": {
+    "enabled": true
+  },
+  "properties": {
+    "type": {
+      "type": "keyword",
+      "field":{
+        "keyword":{
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      },
+      "analyzer": "ik",
+      "store": "no"
+    },
+    "title": {
+      "type": "keyword",
+      "field":{
+        "keyword":{
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      },
+      "analyzer": "ik",
+      "store": "no"
+    },
+    "url": {
+      "type": "keyword",
+      "field":{
+        "keyword":{
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      },
+      "analyzer": "ik",
+      "store": "no"
+    },
+    "infomessage": {
+      "type": "keyword",
+      "field":{
+        "keyword":{
+          "ignore_above": 256,
+          "type": "keyword"
+        }
+      },
+      "analyzer": "ik",
+      "store": "no"
+    }
+  }
+}
+

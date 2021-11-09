@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>search_springcloud_root</artifactId>
+    <groupId>com.it.search.springcloud</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.it.search.springcloud</groupId>
+  <artifactId>springcloud_eureka</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>springcloud_eureka</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+    </dependency>
+    <!--引入eureka依赖-->
+    <!--eureka-server 服务注册中心-->
+<!--    <dependency>-->
+<!--      <groupId>com.it.search.springcloud</groupId>-->
+<!--      <artifactId>springcloud_common</artifactId>-->
+<!--      <version>1.0-SNAPSHOT</version>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.6.2</version>
+    </dependency>
+  </dependencies>
+
+</project>

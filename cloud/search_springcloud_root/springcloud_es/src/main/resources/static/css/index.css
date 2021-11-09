@@ -1,0 +1,223 @@
+*{
+    line-height: 1.6;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background: #f1f1f1;
+    color: #000;
+    font-size: medium;
+    margin: 0 auto;
+}
+
+.headerbar{
+    background-color: #38f;
+    color: #fff;
+    width: 100%;
+}
+.headerbar a{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.headerbar table{
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.warp{
+    max-width: 990px;
+    margin: 0 auto;
+}
+.box_line{
+    background: #fff;
+    padding: 1em;
+    border-top: 1px solid #f0f0f0;
+}
+.index_box{
+    text-align: center;
+    padding: 10px 0;
+}
+.index_logo{
+    color: #38f;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.index_box .search_box input {
+    border: 1px solid #38f;
+}
+
+.search_box input {
+    width: 50%;
+    height: 42px;
+    background: #fff;
+    padding-left: 7px;
+    border: 1px solid #ccc;
+}
+.search_box input, .search_box button {
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+input {
+    border: 1px solid #ccc;
+    font-size: medium;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.index_box .search_box button {
+    background: #38f;
+}
+.search_box button {
+    height: 41px;
+    width: 30px;
+    position: relative;
+    margin-top: 20px;
+    right: 36px;
+    top: -1px;
+    background: gray;
+    cursor: pointer;
+}
+.search_box button:before {
+    content: "\2794";
+    color: #f9f0da;
+    line-height: 1;
+}
+
+.google-auto-placed {
+    background: #fff;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.index_note {
+    color: gray;
+    padding: 1em 0;
+    max-width: 550px;
+    text-align: left;
+    margin: 0 auto;
+}
+.small {
+    font-size: small;
+    font-weight: normal;
+}
+.gray {
+    color: gray;
+    font-weight: normal;
+}
+
+.box_title {
+    padding: 1em;
+    font-weight: bold;
+}
+.box_title a{
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+.box_title a:hover{
+    color: red;
+}
+
+.box_line{
+    background: #fff;
+    padding: 1em;
+    border-top: 1px solid #f0f0f0;
+    min-height: 1.5em;
+}
+.box_line a{
+    color: #000000;
+}
+.box_line a:hover{
+    color: red;
+}
+.strong {
+    font-weight: bold;
+}
+.threadlist_line {
+    line-height: 1.7;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.threadlist_avatar_img {
+    font-size: x-small;
+    text-align: center;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+.threadlist_content {
+    display: block;
+    margin-left: 20px;
+}
+
+.threadlist_subject a{
+    font-size: 16px;
+}
+
+.multi {
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+}
+.multi a {
+    padding: 0 .5em;
+    color: gray;
+}
+
+#footer {
+    text-align: center;
+    padding: 1em 0;
+    color: gray;
+}
+#footer a {
+    color: gray;
+    font-weight: bold;
+}
+
+.strong:nth-child(1),.strong:nth-child(2),.strong:nth-child(3){
+    color: gray;
+}
+
+.strong{
+    font-size: 18px;
+}
+
+.jump{
+    font-size: 18px;
+    color: gray;
+    /* font-weight: bolder; */
+}
+
+.ulline li{
+    display: inline-block;
+    position:relative;
+    left: -4%;
+    margin-left: 12px;
+}
+
+.box_title a{
+    font-size: 18px;
+}
+
+.threadlist_avatar,.threadlist_content{
+    display: inline-block;
+}
+
+.list_btn{
+    font-weight: bolder;
+}

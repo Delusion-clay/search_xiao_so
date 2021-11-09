@@ -1,0 +1,44 @@
+package com.it.search.common
+
+import org.apache.spark.SparkContext
+import org.apache.spark.internal.Logging
+import org.apache.spark.streaming.{Seconds, StreamingContext}
+
+
+object SscFactory extends Serializable with Logging {
+
+
+  /**
+   * SSC 本地模式
+   *
+   * @param appName
+   * @param batchInterval
+   * @param threads
+   */
+  def newLocalSSC(appName: String = "default", batchInterval: Long = 5L, threads: Int = 2): StreamingContext = {
+    val sparkConf = SparkConfFactory.newLocalSparkConf(appName, threads)
+    val ssc = new StreamingContext(sparkConf, Seconds(batchInterval))
+    val sc = ssc.sparkContext
+    sc.setLogLevel("warn")
+    ssc
+  }
+
+
+  /**
+   * SSC 本地模式
+   *
+   * @param appName
+   * @param batchInterval
+   */
+  def newSSC(appName: String = "default", batchInterval: Long = 5L): StreamingContext = {
+    val sparkConf = SparkConfFactory.newSparkConf(appName)
+    new StreamingContext(sparkConf, Seconds(batchInterval))
+  }
+
+
+  def newLocalSscBySc(sparkContext: SparkContext, batchInterval: Long = 5L): StreamingContext = {
+
+    new StreamingContext(sparkContext, Seconds(batchInterval))
+  }
+
+}
